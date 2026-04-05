@@ -5,19 +5,27 @@ public class Enemy : MonoBehaviour
    public GameObject projectilePrefab;
    public Transform firePoint;
 
+   public float fireRate = 1.5f;
+   private float fireTimer;
+
     void Start()
     {
-        
+        InvokeRepeating(nameof(Shoot), 1f, 1.5f);
     }
 
     // Update is called once per frame
+    /*
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        fireTimer += Time.deltaTime;
+
+        if (fireTimer >= fireRate)
         {
             Shoot();
+            fireTimer = 0f;
         }
     }
+    */
 
     void Shoot()
     {
