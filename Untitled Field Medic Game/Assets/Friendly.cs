@@ -1,17 +1,17 @@
 using UnityEngine;
 
-public class Friendly : MonoBehaviour
+public class Friendly : MonoBehaviour, IDamageable, IGrabbable
 {
-    public bool isGrabbable = false;
+    public bool IsGrabbable { get; private set; } = false;
     public int healthPoints = 1;
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        
+
     }
 
     public void TakeDamage()
@@ -19,7 +19,12 @@ public class Friendly : MonoBehaviour
         healthPoints--;
         if (healthPoints < 1)
         {
-            isGrabbable = true;
+            IsGrabbable = true;
+            Debug.Log("I'm dead");
+        }
+        else
+        {
+            Debug.Log("I'm hit");
         }
     }
 }

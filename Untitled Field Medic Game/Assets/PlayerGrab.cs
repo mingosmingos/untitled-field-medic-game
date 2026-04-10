@@ -5,31 +5,35 @@ public class PlayerGrab : MonoBehaviour
     private FixedJoint2D grabJoint;
     private Rigidbody2D grabbedBody;
     private GameObject nearbyObject;
+
     void Start()
     {
-        
+
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (grabJoint == null && nearbyObject != null)
-            {
-                var grab = nearbyObject.GetComponent<Friendly>();
-                Debug.Log(grab.isGrabbable);
+            HandleGrabInput();
+        }
+    }
 
-                if (grab != null && grab.isGrabbable)
-                {
-                    Grab(nearbyObject);
-                }
-            }
-            else
+    void HandleGrabInput()
+    {
+        if (grabJoint != null)
+        {
+            Drop();
+        }
+        else
+        {
+            if (nearbyObject != null)
             {
-                Drop();
+                Grab(nearbyObject);
             }
         }
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         nearbyObject = other.gameObject;
@@ -48,17 +52,19 @@ public class PlayerGrab : MonoBehaviour
         grabbedBody = obj.GetComponent<Rigidbody2D>();
         if (grabbedBody == null) return;
 
+        IGrabbable grabbable = obj.GetComponent<IGrabbable>();
+        if (grabbable == null || !grabbable.IsGrabbable) return;
+
         grabJoint = gameObject.AddComponent<FixedJoint2D>();
         grabJoint.connectedBody = grabbedBody;
+        Debug.Log("Grab");
     }
 
     void Drop()
     {
-        if (grabJoint != null)
-        {
-            Destroy(grabJoint);
-            grabJoint = null;
-            grabbedBody = null;
-        }
+        Destroy(grabJoint);
+        grabJoint = null;
+        grabbedBody = null;
+        Debug.Log("Drop");
     }
 }
