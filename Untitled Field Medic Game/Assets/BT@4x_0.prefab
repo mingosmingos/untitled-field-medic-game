@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5500395047328475012}
   - component: {fileID: 3800028598181096372}
   - component: {fileID: 935199107202269310}
+  - component: {fileID: 7814301247611373907}
   m_Layer: 0
   m_Name: BT@4x_0
   m_TagString: Untagged
@@ -186,3 +187,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   healthPoints: 1
+--- !u!114 &7814301247611373907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4084347669448213691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4333b9c4fe058f44b30d9a0d29013dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  speed: 2
+  changeDirectionTime: 3

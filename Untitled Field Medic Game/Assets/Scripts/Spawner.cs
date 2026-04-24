@@ -3,11 +3,16 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject prefab;
+    public int spawnCount = 3;
+    public float xOffset = 2f;
+    public float yOffset = 2f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Spawn(new Vector2(2, 2));
-        Spawn(new Vector2(4, 2));
+        for (int i = 0; i < spawnCount; i++)
+        {
+            Spawn(new Vector2(xOffset * i, yOffset));
+        }
     }
 
     // Update is called once per frame
