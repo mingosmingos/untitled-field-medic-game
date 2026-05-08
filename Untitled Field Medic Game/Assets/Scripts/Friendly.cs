@@ -19,6 +19,7 @@ public class Friendly : MonoBehaviour, IDamageable, IGrabbable
         healthPoints--;
         if (healthPoints < 1)
         {
+            GetComponent<RandomNavigation>().enabled = false;
             IsGrabbable = true;
             Debug.Log("I'm dead");
         }
