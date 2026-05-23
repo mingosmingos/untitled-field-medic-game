@@ -18,28 +18,28 @@ public class PlayerGrab : MonoBehaviour
         {
             HandleGrabInput();
         }
-        Debug.Log(nearbyObject);
+        // Debug.Log(nearbyObject);
     }
 
     void HandleGrabInput()
     {
         if (grabJoint != null)
         {
-            Debug.Log("grabJoint is not null");
+            // Debug.Log("grabJoint is not null");
             Drop();
         }
         else if (nearbyObject != null)
         {
-            Debug.Log("nearbyObject is not null");
+            // Debug.Log("nearbyObject is not null");
             Grab(nearbyObject);
         }
-        Debug.Log("Both null!");
+        // Debug.Log("Both null!");
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         nearbyObject = other.gameObject;
-        Debug.Log("Entered");
+        // Debug.Log("Entered");
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -47,7 +47,7 @@ public class PlayerGrab : MonoBehaviour
         if (other.gameObject == nearbyObject)
         {
             nearbyObject = null;
-            Debug.Log("Exited");
+            // Debug.Log("Exited");
         }
     }
 
@@ -61,7 +61,7 @@ public class PlayerGrab : MonoBehaviour
 
         grabJoint = gameObject.AddComponent<FixedJoint2D>();
         grabJoint.connectedBody = grabbedBody;
-        Debug.Log("Grab");
+        // Debug.Log("Grab");
     }
 
     void Drop()
@@ -69,6 +69,6 @@ public class PlayerGrab : MonoBehaviour
         Destroy(grabJoint);
         grabJoint = null;
         grabbedBody = null;
-        Debug.Log("Drop");
+        // Debug.Log("Drop");
     }
 }
