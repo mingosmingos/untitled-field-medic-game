@@ -185,6 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WaypointNavigation
   unitAllegiance: 0
   speed: 2
+  rotationSpeed: 180
 --- !u!114 &-9049516448370977152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +202,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 4550039736501973509, guid: 24b5c6ee037f32746a8a301a320c4ab6, type: 3}
   projectilePoint: {fileID: 5731608294853634162}
   ammunition: 2
+  fireRate: 1.5
   healthPointsText: {fileID: 3171851199458041797}
 --- !u!1 &5863241636743164050
 GameObject:
