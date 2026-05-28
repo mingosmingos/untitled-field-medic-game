@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour
     public void Initialize(Vector2 direction)
     {
         this.direction = direction.normalized;
-        // Destroy(gameObject, lifetime);
+        Destroy(gameObject, lifetime);
     }
     void Start()
     {
@@ -23,6 +23,6 @@ public class Projectile : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         other.GetComponent<IDamageable>()?.TakeDamage();
-        // Destroy(gameObject);
+        Destroy(gameObject);
     }
 }

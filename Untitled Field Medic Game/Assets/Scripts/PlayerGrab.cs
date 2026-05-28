@@ -25,12 +25,13 @@ public class PlayerGrab : MonoBehaviour
     {
         if (grabJoint != null)
         {
-            // Debug.Log("grabJoint is not null");
+            Debug.Log("grabJoint is not null");
             Drop();
         }
         else if (nearbyObject != null)
         {
-            // Debug.Log("nearbyObject is not null");
+            Debug.Log("nearbyObject is not null");
+            // Debug.Log(nearbyObject.name);
             Grab(nearbyObject);
         }
         // Debug.Log("Both null!");
@@ -39,7 +40,7 @@ public class PlayerGrab : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         nearbyObject = other.gameObject;
-        // Debug.Log("Entered");
+        Debug.Log("Entered");
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -53,22 +54,28 @@ public class PlayerGrab : MonoBehaviour
 
     void Grab(GameObject obj)
     {
-        grabbedBody = obj.GetComponent<Rigidbody2D>();
-        if (grabbedBody == null) return;
-
         IGrabbable grabbable = obj.GetComponent<IGrabbable>();
         if (grabbable == null || !grabbable.IsGrabbable) return;
 
+        grabbedBody = obj.GetComponent<Rigidbody2D>();
+        if (grabbedBody == null) return;
+
+        grabbable.OnGrabbed(); // NPC switches itself to Dynamic
+
         grabJoint = gameObject.AddComponent<FixedJoint2D>();
         grabJoint.connectedBody = grabbedBody;
-        // Debug.Log("Grab");
     }
 
     void Drop()
     {
         Destroy(grabJoint);
         grabJoint = null;
-        grabbedBody = null;
+
+        if (grabbedBody != null)
+        {
+            grabbedBody.GetComponent<IGrabbable>()?.OnDropped();
+            grabbedBody = null;
+        }
         // Debug.Log("Drop");
     }
 }

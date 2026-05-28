@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: a088477b3b54bc64eb8c0beaeefad99c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3189261270332539664
+    second: PC _ Computer - Police Stories - Miscellaneous - Bullets_0
+  - first:
+      213: -3026324772665963655
+    second: PC _ Computer - Police Stories - Miscellaneous - Bullets_1
+  - first:
+      213: 2013778523521783729
+    second: PC _ Computer - Police Stories - Miscellaneous - Bullets_2
+  - first:
+      213: -9123015673976517381
+    second: PC _ Computer - Police Stories - Miscellaneous - Bullets_3
+  - first:
+      213: 798631126276242287
+    second: PC _ Computer - Police Stories - Miscellaneous - Bullets_4
+  - first:
+      213: -1724709664329888482
+    second: PC _ Computer - Police Stories - Miscellaneous - Bullets_5
+  - first:
+      213: -2876973794629623222
+    second: PC _ Computer - Police Stories - Miscellaneous - Bullets_6
+  - first:
+      213: 1250134937441515829
+    second: PC _ Computer - Police Stories - Miscellaneous - Bullets_7
+  - first:
+      213: -2066679983572300500
+    second: PC _ Computer - Police Stories - Miscellaneous - Bullets_8
+  - first:
+      213: 7494129967200889900
+    second: PC _ Computer - Police Stories - Miscellaneous - Bullets_9
+  - first:
+      213: 5243096027986025431
+    second: PC _ Computer - Police Stories - Miscellaneous - Bullets_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC _ Computer - Police Stories - Miscellaneous - Bullets_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 17
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013051a5a38824c20800000000000000
+      internalID: 3189261270332539664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Police Stories - Miscellaneous - Bullets_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 17
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97bc74647a55006d0800000000000000
+      internalID: -3026324772665963655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Police Stories - Miscellaneous - Bullets_2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 17
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b793dec5e062fb10800000000000000
+      internalID: 2013778523521783729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Police Stories - Miscellaneous - Bullets_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 17
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc0f409499846180800000000000000
+      internalID: -9123015673976517381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Police Stories - Miscellaneous - Bullets_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 17
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6bf34c27ce451b00800000000000000
+      internalID: 798631126276242287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Police Stories - Miscellaneous - Bullets_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 17
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d0fecb2b99018e0800000000000000
+      internalID: -1724709664329888482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Police Stories - Miscellaneous - Bullets_6
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 17
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a426efe939fe218d0800000000000000
+      internalID: -2876973794629623222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Police Stories - Miscellaneous - Bullets_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1
+        width: 52
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539b1832a1f595110800000000000000
+      internalID: 1250134937441515829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Police Stories - Miscellaneous - Bullets_8
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1
+        width: 52
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d43c2318da153e0800000000000000
+      internalID: -2066679983572300500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Police Stories - Miscellaneous - Bullets_9
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1
+        width: 52
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c6e93ef7f700860800000000000000
+      internalID: 7494129967200889900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Police Stories - Miscellaneous - Bullets_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1
+        width: 52
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db5e5fee0833c840800000000000000
+      internalID: 5243096027986025431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c981074cc98a6a64bbda9ef2e976dc32
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PC _ Computer - Police Stories - Miscellaneous - Bullets_0: 3189261270332539664
+      PC _ Computer - Police Stories - Miscellaneous - Bullets_1: -3026324772665963655
+      PC _ Computer - Police Stories - Miscellaneous - Bullets_10: 5243096027986025431
+      PC _ Computer - Police Stories - Miscellaneous - Bullets_2: 2013778523521783729
+      PC _ Computer - Police Stories - Miscellaneous - Bullets_3: -9123015673976517381
+      PC _ Computer - Police Stories - Miscellaneous - Bullets_4: 798631126276242287
+      PC _ Computer - Police Stories - Miscellaneous - Bullets_5: -1724709664329888482
+      PC _ Computer - Police Stories - Miscellaneous - Bullets_6: -2876973794629623222
+      PC _ Computer - Police Stories - Miscellaneous - Bullets_7: 1250134937441515829
+      PC _ Computer - Police Stories - Miscellaneous - Bullets_8: -2066679983572300500
+      PC _ Computer - Police Stories - Miscellaneous - Bullets_9: 7494129967200889900
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
