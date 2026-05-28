@@ -11,6 +11,9 @@ public class NPCBehaviour : MonoBehaviour, IGrabbable, IDamageable
     [Header("Offense")]
     public GameObject projectilePrefab;
     public Transform projectilePoint;
+    public int ammunition = 2;
+    public float fireRate = 1.5f; // NEW: Seconds between shots
+    private float nextFireTime = 0f;
 
     [SerializeField] private TextMeshProUGUI healthPointsText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -57,8 +60,18 @@ public class NPCBehaviour : MonoBehaviour, IGrabbable, IDamageable
 
     void Shoot()
     {
-        GameObject projectile = Instantiate(projectilePrefab, projectilePoint.position, Quaternion.identity);
-        Vector2 shootDirection = Vector2.down;
+        if (ammunition < 1) return;
+
+        if (Time.time < nextFireTime) return;
+
+        nextFireTime = Time.time + fireRate;
+        ammunition--;
+        
+        Vector2 shootDirection = -transform.up;
+
+        GameObject projectile = Instantiate(projectilePrefab, projectilePoint.position, transform.rotation);
         projectile.GetComponent<Projectile>().Initialize(shootDirection);
+        
+        Debug.Log($"[{gameObject.name}] Shot a projectile. Remaining ammunition: {ammunition}");
     }
 }

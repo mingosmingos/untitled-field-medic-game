@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class VisionBehaviour : MonoBehaviour
 {
+    private int i = 1;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,12 +19,13 @@ public class VisionBehaviour : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         NPCBehaviour unit = GetComponentInParent<NPCBehaviour>();
-        
+        i++;
+        Debug.Log(i);
         if (unit != null)
         {
             unit.OnVisionDetected(other);
         }
 
-        Debug.Log("Vision detected: " + other.gameObject.name);
+        // Debug.Log("Vision detected: " + other.gameObject.name);
     }
 }

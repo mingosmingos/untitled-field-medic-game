@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class NPCSpawner : MonoBehaviour
 {
     public GameObject prefab;
     public int spawnCount = 3;
